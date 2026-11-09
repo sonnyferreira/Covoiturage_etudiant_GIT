@@ -1,71 +1,58 @@
-# Covoiturage étudiant
+# Covoiturage étudiant — Organisation du versioning
 
-Application web permettant aux étudiants d'un même campus de partager leurs trajets
-(domicile ↔ école) pour réduire les coûts et l'empreinte carbone.
+Projet réalisé dans le cadre du cours de versioning Git.
+Application de covoiturage étudiant développée par une équipe de 8 personnes.
 
-## Utilisateurs
+## 1. Définition du projet
 
-- **Conducteur** : propose des trajets
-- **Passager** : recherche et réserve une place
-- **Administrateur** : modère les comptes et les signalements
+### Besoins
+- **Versions en parallèle** : oui, plusieurs fonctionnalités développées en même temps et des correctifs pendant le développement
+- **Besoin de stabilité** : oui, la version publiée doit toujours fonctionner
+- **Version test en ligne** : oui, une version de test séparée de la version publiée
 
-## Fonctionnalités prévues
+### L'équipe
+- **Taille** : 8 personnes (équipe moyenne)
+- **Niveau d'expertise** : hétérogène
 
-### v1.0 — Version minimale
-- [ ] Inscription / connexion avec email étudiant
-- [ ] Profil utilisateur
-- [ ] Publier un trajet (départ, arrivée, date, heure, places, prix)
-- [ ] Rechercher un trajet
-- [ ] Réserver une place
+| Rôle | Membre(s) | Missions |
+| --- | --- | --- |
+| Responsable du dépôt | ... | Crée le dépôt, gère les accès et les protections |
+| Responsable des versions | ... | Prépare les versions, fusionne `develop` dans `main`, crée les tags |
+| Relecteurs | ..., ... | Relisent et approuvent les Pull Requests |
+| Développeurs | ..., ..., ..., ... | Développent sur leurs branches et ouvrent des Pull Requests |
 
-### v1.1 — Améliorations
-- [ ] Annuler une réservation
-- [ ] Historique des trajets
-- [ ] Notifications par email
+Tous les membres développent et relisent au moins une fois.
 
-### v2.0 — Communauté
-- [ ] Messagerie conducteur / passager
-- [ ] Notation et avis après un trajet
-- [ ] Espace administrateur
+## 2. Organisation Git
 
-## Technologies
-
-| Partie | Technologie |
-| --- | --- |
-| Front-end | React |
-| Back-end | Node.js / Express |
-| Base de données | PostgreSQL |
-| Versioning | Git / GitHub |
-
-## Organisation Git (Git Flow)
+### Workflow : Git Flow
 
 | Branche | Rôle |
 | --- | --- |
-| `main` | Version en production, toujours stable |
+| `main` | Version publiée, toujours stable |
 | `develop` | Intégration et version de test |
 | `feature/...` | Une branche par fonctionnalité, créée depuis `develop` |
-| `release/...` | Préparation d'une version avant passage en production |
+| `release/...` | Préparation d'une version avant publication |
 | `hotfix/...` | Correctif urgent créé depuis `main` |
 
-## Règles de contribution
+### Outils
+- **GitHub** : hébergement du dépôt
+- **Issues** : une tâche = une issue assignée
+- **Projects** : tableau Kanban (À faire / En cours / En review / Fait)
+- **Pull Requests** : relecture avant fusion
+- **GitHub Actions** : tests et déploiement automatiques
 
-- Aucun push direct sur `main` ni `develop`
+### Règles
+- Aucun push direct sur `main` ni `develop` (branches protégées)
 - Toute modification passe par une Pull Request vers `develop`
-- Chaque Pull Request doit être relue et approuvée par au moins 1 membre
-- Nommage des branches : `feature/nom`, `fix/nom`, `hotfix/nom`, `release/vX.Y`
-- Messages de commit : `feat: ...`, `fix: ...`, `docs: ...`
-- Versions numérotées : v1.0.0, v1.1.0, v2.0.0 (versionnage sémantique)
-- Jamais de mot de passe ni de clé secrète dans le dépôt
+- Au moins 1 approbation par un autre membre avant fusion
+- Branches : `feature/nom`, `fix/nom`, `hotfix/nom`, `release/vX.Y`
+- Commits : `feat: ...`, `fix: ...`, `docs: ...`
+- Versions numérotées : v1.0.0, v1.1.0, v2.0.0
 
-## Équipe
+## 3. Pratique en équipe
 
-| Membre | Rôle |
-| --- | --- |
-| Sonny FERREIRA | Responsable du dépôt |
-| ... | Front-end |
-| ... | Front-end |
-| ... | Front-end |
-| ... | Back-end |
-| ... | Back-end |
-| ... | Back-end |
-| ... | Base de données |
+1. Créer ou prendre une issue
+2. Créer sa branche depuis `develop`
+3. Faire ses commits et pousser sa branche
+4. Ouvrir une Pull Request vers
