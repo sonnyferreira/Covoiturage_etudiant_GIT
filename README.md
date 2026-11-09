@@ -11,7 +11,7 @@ Application de covoiturage étudiant développée par une équipe de 8 personnes
 - **Version test en ligne** : oui, une version de test séparée de la version publiée
 
 ### L'équipe
-- **Taille** : 8 personnes (équipe moyenne)
+- **Taille** : 7 personnes (équipe moyenne)
 - **Niveau d'expertise** : hétérogène
 
 | Rôle | Membre(s) | Missions |
