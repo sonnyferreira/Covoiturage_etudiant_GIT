@@ -50,3 +50,11 @@ Tous les membres développent et relisent au moins une fois.
 - Commits : `feat: ...`, `fix: ...`, `docs: ...`
 - Versions numérotées : v1.0.0, v1.1.0, v2.0.0
 
+## 3. Pratique en équipe
+
+1. Créer ou prendre une issue
+2. Créer sa branche depuis `develop`
+3. Faire ses commits et pousser sa branche
+4. Ouvrir une Pull Request vers `develop`
+5. Un autre membre relit et approuve
+6. Fusion dans `develop`, puis publication dans `main` par les responsables des versions
