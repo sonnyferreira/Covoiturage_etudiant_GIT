@@ -16,10 +16,10 @@ Application de covoiturage étudiant développée par une équipe de 8 personnes
 
 | Rôle | Membre(s) | Missions |
 | --- | --- | --- |
-| Responsable du dépôt | ... | Crée le dépôt, gère les accès et les protections |
-| Responsable des versions | ... | Prépare les versions, fusionne `develop` dans `main`, crée les tags |
-| Relecteurs | ..., ... | Relisent et approuvent les Pull Requests |
-| Développeurs | ..., ..., ..., ... | Développent sur leurs branches et ouvrent des Pull Requests |
+| Responsable du dépôt | Sonny FERREIRA | Crée le dépôt, gère les accès et les protections |
+| Responsable des versions | Jules BOUSQUET,Quentin MONTREUIL | Prépare les versions, fusionne `develop` dans `main`, crée les tags |
+| Relecteurs | Sonny FERREIRA, JEAN ROMAIN et Eddy DUMONI | Relisent et approuvent les Pull Requests |
+| Développeurs | Eddy DUMONI, Lorenzo GUILLERMAZ, Noah DUBOEUF et Quentin MONTREUIL | Développent sur leurs branches et ouvrent des Pull Requests |
 
 Tous les membres développent et relisent au moins une fois.
 
