@@ -58,3 +58,10 @@ Tous les membres développent et relisent au moins une fois.
 4. Ouvrir une Pull Request vers `develop`
 5. Un autre membre relit et approuve
 6. Fusion dans `develop`, puis publication dans `main` par les responsables des versions
+
+## 4. Rapport
+
+- Mise en place du dépôt, de `develop` et des protections de branches
+- Rédaction de l'organisation via plusieurs commits et une Pull Request
+- Difficultés rencontrées : ...
+- Bilan : ...
